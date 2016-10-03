@@ -13,7 +13,7 @@ public class Division extends Operation {
 
     @Override
     public String toString() {
-        return "(" + expression1.operar() + "/" + expression2.operar() + ")";
+        return "(" + expression1.toString() + "/" + expression2.toString() + ")";
     }
 
 }
