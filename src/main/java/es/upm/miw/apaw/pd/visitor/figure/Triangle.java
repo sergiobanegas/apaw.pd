@@ -11,19 +11,22 @@ public class Triangle extends Figure {
         this.height = height;
     }
 
-    @Override
-    public double area() {
-        return base * height * 0.5;
+    public double getBase() {
+        return base;
     }
 
-    @Override
-    public double numberOfSides() {
-        return 3;
+    public double getHeight() {
+        return height;
     }
 
     @Override
     public String toString() {
         return super.toString();
+    }
+
+    @Override
+    public double accept(Visitor visitor) {
+        return visitor.visitTriangle(this);
     }
 
 }
