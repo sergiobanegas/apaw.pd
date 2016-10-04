@@ -39,4 +39,11 @@ public class NaturalNumberTest {
         manager.setNaturalNumberCreator(new NaturalNumberFrCreator());
         assertEquals("deux", manager.createNaturalNumber().getTextValue());
     }
+    
+    @Test
+    public void testErrorNaturalNumberFr() {
+        manager = new NaturalNumberManager(10);
+        manager.setNaturalNumberCreator(new NaturalNumberFrCreator());
+        assertEquals("???", manager.createNaturalNumber().getTextValue());
+    }
 }
