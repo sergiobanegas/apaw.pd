@@ -1,4 +1,4 @@
-package es.upm.miw.apaw.pd.visitor.figure;
+package es.upm.miw.apaw.pd.visitor;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,6 +11,7 @@ import org.junit.Test;
 import es.upm.miw.apaw.pd.visitor.Element;
 import es.upm.miw.apaw.pd.visitor.ElementA;
 import es.upm.miw.apaw.pd.visitor.ElementB;
+import es.upm.miw.apaw.pd.visitor.Visitor2;
 
 public class Visitor2Test {
     private Collection<Element> coleccion = new ArrayList<Element>();
