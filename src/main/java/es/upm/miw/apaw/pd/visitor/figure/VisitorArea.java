@@ -2,15 +2,22 @@ package es.upm.miw.apaw.pd.visitor.figure;
 
 public class VisitorArea extends Visitor {
 
-    public double visitCircle(Circle circulo) {
-        return Math.PI * circulo.getRadius() * circulo.getRadius();
+    private double sum = 0;
+
+    public void visitCircle(Circle circulo) {
+        sum += Math.PI * circulo.getRadius() * circulo.getRadius();
     }
 
-    public double visitSquare(Square cuadrado) {
-        return cuadrado.getSide() * cuadrado.getSide();
+    public void visitSquare(Square cuadrado) {
+        sum += cuadrado.getSide() * cuadrado.getSide();
     }
 
-    public double visitTriangle(Triangle triangulo) {
-        return triangulo.getBase() * triangulo.getHeight() * 0.5;
+    public void visitTriangle(Triangle triangulo) {
+        sum += triangulo.getBase() * triangulo.getHeight() * 0.5;
+    }
+
+    @Override
+    public double getSum() {
+        return sum;
     }
 }
