@@ -14,8 +14,8 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double accept(Visitor v) {
-        return v.visitCircle(this);
+    public void accept(Visitor v) {
+        v.visitCircle(this);
     }
 
 }

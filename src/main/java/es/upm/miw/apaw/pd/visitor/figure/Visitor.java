@@ -2,10 +2,11 @@ package es.upm.miw.apaw.pd.visitor.figure;
 
 public abstract class Visitor {
 
-    abstract double visitCircle(Circle circulo);
+    abstract void visitCircle(Circle circulo);
 
-    abstract double visitSquare(Square circulo);
+    abstract void visitSquare(Square circulo);
 
-    abstract double visitTriangle(Triangle circulo);
+    abstract void visitTriangle(Triangle circulo);
 
+    abstract double getSum();
 }
