@@ -8,7 +8,7 @@ public abstract class Figure {
         this.description = description;
     }
 
-    public abstract double accept(Visitor visitor);
+    public abstract void accept(Visitor visitor);
 
     @Override
     public String toString() {
