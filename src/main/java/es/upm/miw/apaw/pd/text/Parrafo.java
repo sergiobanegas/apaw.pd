@@ -16,8 +16,6 @@ public class Parrafo extends TextComposite {
     public void remove(TextComponent component) {
         if (!component.isComposite()) {
             components.remove(component);
-        } else {
-            throw new UnsupportedOperationException();
         }
     }
 
