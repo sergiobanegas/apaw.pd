@@ -1,6 +1,6 @@
 package es.upm.miw.apaw.pd.visitor;
 
-public class Visitor2 extends Visitor {
+public class Visitor2 implements Visitor {
 
     private int numberOfAs = 0;
 
