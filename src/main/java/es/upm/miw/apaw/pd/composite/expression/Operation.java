@@ -8,15 +8,12 @@ public abstract class Operation implements Expression {
         this.expression1 = expression1;
         this.expression2 = expression2;
     }
-    
+
     protected Expression getExpression1() {
         return expression1;
     }
-    
+
     protected Expression getExpression2() {
         return expression2;
     }
-
-    @Override
-    public abstract int operar();
 }
