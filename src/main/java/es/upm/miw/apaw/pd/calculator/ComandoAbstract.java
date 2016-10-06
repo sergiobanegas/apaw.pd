@@ -4,7 +4,7 @@ public abstract class ComandoAbstract implements Comando {
 
     private Calculator calculator;
 
-    ComandoAbstract(Calculator calculator) {
+    public ComandoAbstract(Calculator calculator) {
         this.calculator = calculator;
     }
 
