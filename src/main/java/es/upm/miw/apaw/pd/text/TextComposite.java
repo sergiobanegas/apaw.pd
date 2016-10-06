@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class TextComposite implements TextComponent {
 
-    protected List<TextComponent> components;
+    private List<TextComponent> components;
 
     public TextComposite() {
         this.components = new ArrayList<>();
@@ -13,6 +13,10 @@ public abstract class TextComposite implements TextComponent {
 
     public boolean isComposite() {
         return true;
+    }
+    
+    public List<TextComponent> getComponents() {
+        return components;
     }
 
     @Override
