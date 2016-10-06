@@ -15,7 +15,7 @@ public abstract class TextComposite implements TextComponent {
         return true;
     }
     
-    public List<TextComponent> getComponents() {
+    protected List<TextComponent> getComponents() {
         return components;
     }
 
