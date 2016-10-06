@@ -8,12 +8,12 @@ public class Division extends Operation {
 
     @Override
     public int operar() {
-        return expression1.operar() / expression2.operar();
+        return getExpression1().operar() / getExpression2().operar();
     }
 
     @Override
     public String toString() {
-        return "(" + expression1.toString() + "/" + expression2.toString() + ")";
+        return "(" + getExpression1().toString() + "/" + getExpression2().toString() + ")";
     }
 
 }
