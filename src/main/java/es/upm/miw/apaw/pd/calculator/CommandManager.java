@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CommandManager {
-    private Map<String, Comando> comandos = new HashMap<>();
+    private Map<String, ComandoAbstract> comandos = new HashMap<>();
 
-    public void add(Comando comando) {
+    public void add(ComandoAbstract comando) {
         this.comandos.put(comando.name(), comando);
     }
 
