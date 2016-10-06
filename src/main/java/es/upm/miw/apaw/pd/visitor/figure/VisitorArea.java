@@ -1,6 +1,6 @@
 package es.upm.miw.apaw.pd.visitor.figure;
 
-public class VisitorArea extends Visitor {
+public class VisitorArea implements Visitor {
 
     private double sum = 0;
 
