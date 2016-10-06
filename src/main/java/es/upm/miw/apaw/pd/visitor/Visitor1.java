@@ -1,6 +1,6 @@
 package es.upm.miw.apaw.pd.visitor;
 
-public class Visitor1 extends Visitor {
+public class Visitor1 implements Visitor {
 
     @Override
     public void visitElementA(ElementA e) {
