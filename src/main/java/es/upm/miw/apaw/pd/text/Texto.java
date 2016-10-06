@@ -5,7 +5,7 @@ public class Texto extends TextComposite {
     @Override
     public void add(TextComponent component) {
         if (component.isComposite()) {
-            components.add(component);
+            getComponents().add(component);
         } else {
             throw new UnsupportedOperationException();
         }
@@ -15,7 +15,7 @@ public class Texto extends TextComposite {
     @Override
     public void remove(TextComponent component) {
         if (!component.isComposite()) {
-            components.remove(component);
+            getComponents().remove(component);
         }
     }
 
