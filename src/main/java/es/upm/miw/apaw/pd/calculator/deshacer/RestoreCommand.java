@@ -1,9 +1,10 @@
 package es.upm.miw.apaw.pd.calculator.deshacer;
 
 import es.upm.miw.apaw.pd.calculator.Calculator;
+import es.upm.miw.apaw.pd.calculator.ComandoAbstract;
 import upm.jbb.IO;
 
-public class RestoreCommand extends MementoCommand {
+public class RestoreCommand extends ComandoAbstract {
 
     public RestoreCommand(Calculator calculator) {
         super(calculator);
@@ -11,7 +12,7 @@ public class RestoreCommand extends MementoCommand {
 
     @Override
     public void execute() {
-        getCalculatorMementable().restoreMemento((String) IO.getIO().select(getCalculatorMementable().getMementos().toArray()));
+        ((CalculadoraMementable)getCalculator()).restoreMemento((String) IO.getIO().select(((CalculadoraMementable)getCalculator()).getMementos().toArray()));
     }
 
     @Override
