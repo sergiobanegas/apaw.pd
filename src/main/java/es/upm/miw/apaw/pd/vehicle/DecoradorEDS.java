@@ -3,17 +3,17 @@ package es.upm.miw.apaw.pd.vehicle;
 public class DecoradorEDS extends Decorador {
 
     public DecoradorEDS(VehiculoAbstracto vehiculo) {
-        this.vehiculo = vehiculo;
+        super(vehiculo);
     }
 
     @Override
     public String getModelo() {
-        return vehiculo.getModelo() + " + EDS";
+        return getVehiculo().getModelo() + " + EDS";
     }
 
     @Override
     public double getPrecio() {
-        return vehiculo.getPrecio() + 50;
+        return getVehiculo().getPrecio() + 50;
     }
 
 }
