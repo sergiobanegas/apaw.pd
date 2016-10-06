@@ -14,11 +14,6 @@ public class Square extends Figure {
     }
 
     @Override
-    public String toString() {
-        return super.toString();
-    }
-
-    @Override
     public void accept(Visitor visitor) {
         visitor.visitSquare(this);
     }
