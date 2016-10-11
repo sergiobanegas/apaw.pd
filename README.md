@@ -1,5 +1,5 @@
 # Patrones de diseño
-#### Asignatura: *Ingeniería Web: Visión General*
+#### Asignatura: *Arquitectura y Patrones para Aplicaciones Web*
 #### [Máster en Ingeniería Web por la U.P.M.](http://miw.etsisi.upm.es)
 
 ### Implementaciones
